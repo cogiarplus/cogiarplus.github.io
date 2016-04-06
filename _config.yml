@@ -1,7 +1,7 @@
 # General settings
-url: ""
-baseurl: ""
-author: "Cogiar+"
+url: https://cogiarplus.github.io # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog
+author: "Cogiarplus"
 
 index:
   en:
