@@ -11,4 +11,4 @@ lang: en
 
 ___
 
-Please, visit [Lab4All](#)
+Please, visit [Lab4All](http://cogiarplus.github.io/labforall/)
