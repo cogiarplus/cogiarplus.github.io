@@ -1,0 +1,14 @@
+---
+layout: post
+title: Lab4All
+link: lab4all-it
+date: 2016-04-06
+categories:
+lang: it
+---
+
+Occupazione giovanile attraverso la realizzazione di laboratori creativi per il potenziamento di nuove professionalità.
+
+___
+
+Please, visit [Lab4All](#)

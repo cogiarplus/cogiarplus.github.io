@@ -1,0 +1,40 @@
+# General settings
+url: ""
+baseurl: ""
+author: "Cogiar+"
+
+index:
+  en:
+  it: indice.html
+
+description:
+  en: ""
+  it: ""
+
+features_title:
+  en: "News"
+  it: "News"
+
+quote_content:
+  en: "Engaged through architecture, endured by communities"
+  it: "Engaged through architecture, endured by communities"
+
+quote_footer:
+  en: "...in a thoughtful collective way!"
+  it: "...in a thoughtful collective way!"
+
+copyright:
+  en: "Cogiarplus © 2016 | All Rights Reserved"
+  it: "Cogiarplus © 2016 | Tutti i Diritti Riservati"
+
+cogiarplus:
+  icon: "/images/icon.png"
+  logo: "/images/logo.png"
+  include_content: true
+  include_analytics: false
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+permalink: pretty

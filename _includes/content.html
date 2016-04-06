@@ -1,0 +1,30 @@
+<img src="{{ site.baseurl }}{{ site.cogiarplus.logo }}" alt="CoGiAr+" style="width: 100%">
+
+{% if site.description[page.lang] %}
+<p>{{ site.description[page.lang] }}</p>
+{% endif %}
+
+<h2>{{ site.features_title[page.lang] }}</h2>
+
+{% assign posts=site.posts limit:1 | where:"lang", page.lang %}
+
+<ul class="post-list">
+  {% for post in posts %}
+    <li>
+      <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">@</a> -->
+      <strong>{{ post.title }}</strong> | <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
+
+{% for post in posts %}
+  <p>{{ post.content }}</p>
+{% endfor %}
+
+<!-- <hr />
+<ul class="fa-ul main-list">
+  <li class="main-list-item">
+    <span class="fa fa-github fa-lg main-list-item-icon"></span>
+    <a href="#">GitHub</a>
+  </li>
+</ul> -->

@@ -1,0 +1,37 @@
+---
+layout: default
+link: index
+lang: it
+---
+<nav class="lang">
+  {% assign pages=site.pages | where:"link", page.link | sort: 'lang' %}
+  {% for page in pages %}
+  <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+  {% endfor %}
+</nav>
+
+<div class="wrapper">
+    <header>
+        {% if site.cogiarplus.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="box-shadow: 0 0 0 0; border: 0; background-image: url('{{ site.baseurl }}{{ site.cogiarplus.icon }}')"></a>
+        </div>
+        {% endif %}
+
+        {% if site.quote_content[page.lang] %}
+        <div class="tagline-container"><p>{{ site.quote_content[page.lang] }}</p>
+          {% if site.quote_footer[page.lang] %}
+          <blockquote style="margin-right:0">{{ site.quote_footer[page.lang] }}</blockquote></div>
+          {% endif %}
+        {% endif %}
+    </header>
+    <main>
+      {% if site.cogiarplus.include_content %}
+      <div class="content">
+        {% include content.html %}
+      </div>
+      {% endif %}
+    </main>
+</div>
+
+<footer class="poweredby">{{ site.copyright[page.lang] }}</footer>
