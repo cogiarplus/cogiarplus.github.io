@@ -11,4 +11,4 @@ Occupazione giovanile attraverso la realizzazione di laboratori creativi per il 
 
 ___
 
-Please, visit [Lab4All](http://cogiarplus.github.io/labforall/)
+Please, visit [labforall](http://cogiarplus.github.io/labforall/)
